@@ -25,3 +25,23 @@ cd server && npm install --save sequelize mysql2 && npm install -D nodemon seque
 Instalar todas as dependências com `npm install` .
 
 Rodar o servidor com `npm run dev` .
+
+Com o mysql rodando, no Workbank, executar o seguinte comando:
+
+```sql
+CREATE DATABASE pratica_sequelize;
+```
+
+Criar o arquivo .sequelizerc com o seguinte conteudo:
+
+```json
+const path = require('path')
+
+module.exports = {
+  config: path.resolve('./database/config', 'config.json'),
+  'models-path': path.resolve('./database/models'),
+  'seeders-path': path.resolve('./database/seeders'),
+  'migrations-path': path.resolve('./database/migrations'),
+}
+```
+
