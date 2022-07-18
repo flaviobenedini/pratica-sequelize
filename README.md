@@ -26,6 +26,9 @@ Instalar todas as dependências com `npm install` .
 
 Rodar o servidor com `npm run dev` .
 
+
+## Conexão com o BD
+
 Com o mysql rodando, no Workbank, executar o seguinte comando:
 
 ```sql
