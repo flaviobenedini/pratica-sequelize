@@ -48,3 +48,6 @@ module.exports = {
 }
 ```
 
+## Models
+
+Vamos criar os models a partir do sequelize-cli
